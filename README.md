@@ -31,12 +31,12 @@ The object-oriented approach does not need helpers, you just need to define a "f
 
 The __call__ method should honor the targeted operator interface. To pass fixed parameters, use the __init__ constructor.
 
-There is an example of an operator implemented this way as the steady class in the sho/iters.py file.
+There is an example of an operator implemented this way as the steady class in the _sho/iters.py_ file.
 
-Two example algorithms are provided: a random search and a greedy search. Several useful stopping criterions are provided. The corresponding encoding-dependent operators are also provided, for both numeric and bitstring encodings. The snp.py file shows how to assemble either a numeric greedy solver or a bitstring greedy solver.
+Two example algorithms are provided: a random search and a greedy search. Several useful stopping criterions are provided. The corresponding encoding-dependent operators are also provided, for both numeric and bitstring encodings. The _snp.py_ file shows how to assemble either a numeric greedy solver or a bitstring greedy solver.
 
-To setup your own solver, add your algorithm(s) into the algo.py module, then assemble its instance under its name into snp.py. For instance, if you created the annealing algorithm, you will be able to immediatly assemble num_annealing and bit_annealing.
+To setup your own solver, add your algorithm(s) into the _algo.py_ module, then assemble its instance under its name into _snp.py_. For instance, if you created the annealing algorithm, you will be able to immediatly assemble num_annealing and bit_annealing.
 
-One should be able to call your solvers with python3 snp.py --solver num_annealing, for instance.
+One should be able to call your solvers with _python3 snp.py --solver num_annealing_, for instance.
 
-The ert.py file compute the Expected Run Time Empirical Cumulative Distribution Functions and the plot of the curve.
+The _ert.py_ file compute the Expected Run Time Empirical Cumulative Distribution Functions and the plot of the curve.
